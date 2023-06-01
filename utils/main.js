@@ -204,7 +204,7 @@ self.Utils = Utils; // export for iOS 14- qwq
 // stat
 (function() {
   if (location.port) return;
-  /* Baidu Tongji */
+  /* Baidu Tongji 
   Utils.loadJS(`
     var _hmt = _hmt || [];
     (function() {
@@ -214,18 +214,20 @@ self.Utils = Utils; // export for iOS 14- qwq
       s.parentNode.insertBefore(hm, s);
     })();
   `);
-  /* Global site tag (gtag.js) - Google Analytics */
+  */
+  /* Global site tag (gtag.js) - Google Analytics 
   Utils.loadJS(`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-K98WR056RJ');
+    gtag('config', 'G-');
     window.addEventListener('load', function(){
       var s = document.createElement('script');
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-K98WR056RJ';
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-';
       document.body.appendChild(s);
     });
   `);
+  */
   /* sdk.51.la */
   Utils.loadJS('!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"Jj67QM9XKxdyBUKP",ck:"Jj67QM9XKxdyBUKP"});');
   Utils.loadJS('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8369333813205733');

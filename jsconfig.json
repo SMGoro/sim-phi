@@ -4,7 +4,7 @@
 		"target": "ESNext",
 		"baseUrl": ".",
 		"paths": {
-			"/utils/*": [
+			"./utils/*": [
 				"utils/*"
 			]
 		},
