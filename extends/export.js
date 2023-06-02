@@ -112,3 +112,8 @@ function frix(num) {
 		}
 	}
 }
+document.getElementById('btn-dl').addEventListener('click', () => {
+	callback().then(() => {
+	  console.log('操作完成');
+	});
+  });

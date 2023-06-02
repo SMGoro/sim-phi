@@ -23,7 +23,7 @@
 	</script>
 	<script>if (!window.Promise) location.href = '412.html';</script>
 	<script src="./utils/main.js"></script>
-	<script type="module" src="script.js?v=142251"></script>
+	<script type="module" src="script.js?v=142251" defer></script>
 </head>
 
 <body>
@@ -33,6 +33,12 @@
 			<h1 class="title"></h1>
 			<p class="info"></p>
 			<p class="profile">上传<a id="qwq">谱面和资源文件</a>或将其打包成zip然后上传；<br>读取完成后调节相关参数，最后点击“播放”按钮。<br>播放时双击画面：左上角暂停；右上角重新开始；右下角全屏。</p>
+					
+			<input type="button" id="btn-random" value="随机谱面" onclick="">
+			<input type="button" id="btn-pz" value="选择谱面" onclick="">
+			<input type="button" id="btn-dl" value="下载谱面" onclick="">
+			<input type="button" id="btn-skin" value="皮肤选择" onclick="">
+			<br>
 			<div id="uploader" class="disabled">
 				<input type="button" id="uploader-upload" value="上传">
 				<div id="uploader-select">
@@ -73,7 +79,7 @@
 						<option value="0.2">明亮</option>
 					</select>
 				</div><br>
-				<div>曲名：<input id="input-name" class="input" style="width:7em" placeholder="&#60; Untitled &#62;"></div>
+				<div>曲名：<input id="input-name" vaule="" class="input" style="width:7em" placeholder="&#60; Untitled &#62;"></div>
 				<div>曲师：<input id="input-artist" class="input" style="width:7em" placeholder="&#60; nameless &#62;"></div><br>
 				<div>曲绘：<input id="input-illustrator" class="input" style="width:7em" placeholder="&#60; nameless &#62;"></div>
 				<div>谱师：<input id="input-charter" class="input" style="width:7em" placeholder="&#60; nameless &#62;"></div><br>

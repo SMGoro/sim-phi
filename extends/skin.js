@@ -135,3 +135,9 @@ function joinPathInfo(info, path) {
 	}
 	return info;
 }
+
+document.getElementById('btn-skin').addEventListener('click', () => {
+	skin().then(() => {
+	  console.log('操作完成');
+	});
+  });

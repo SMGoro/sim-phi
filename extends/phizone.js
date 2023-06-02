@@ -247,3 +247,18 @@ function getOffset(id) {
 	// handled up to 138
 	return 0;
 }
+
+window.onload = function() {
+	random()
+  };
+  document.getElementById('btn-random').addEventListener('click', () => {
+	  random().then(() => {
+		console.log('操作完成');
+	  });
+	});
+	document.getElementById('btn-pz').addEventListener('click', () => {
+		dialog().then(() => {
+		  console.log('操作完成');
+		});
+	  });
+  
